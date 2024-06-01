@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="min-height: 100vh;">
+    
+    {% include 'nav.html' %}
+
+    <div class="container col-xl-12">
+        <div class="text-center">
+            <h1>Đóng Logo</h1>
+            <form action="/" method="post" enctype="multipart/form-data" class="mt-4">
+                <div class="mb-3 row">
+                    <label for="image" class="col-sm-2 col-form-label">Chọn file ảnh từ thiết bị:</label>
+                    <div class="col-sm-10">
+                        <input type="file" name="image" id="image" class="form-control bg-secondary text-white">
+                    </div>
+                    
+                </div>
+                <div class="mb-3 row">
+                    <label for="img_url" class="col-sm-2 col-form-label">Chọn ảnh từ đường dẫn:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="img_url" id="img_url" class="form-control bg-success text-white">
+                    </div>
+                </div>
+                
+                <div class="mb-3 row">
+                    <label for="text" class="col-sm-2 col-form-label">Nhập văn bản:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="text" id="text" value="Thuyết Minh Tại bit.ly/tvphim" class="form-control bg-info">
+                    </div>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Đóng Logo</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+  
+    
+
+</body>
+</html>
